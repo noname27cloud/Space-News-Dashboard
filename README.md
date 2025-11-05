@@ -2,7 +2,12 @@
 
 A responsive website to browse, search, and filter space-related news articles, with features for dynamic navigation and article exploration.
 
+## 🖥 Demo  
+[Open the live application](https://noname27cloud.github.io/Space-News-Dashboard/)  
+
+
 ---
+
 
 ## 🌟 Features
 
