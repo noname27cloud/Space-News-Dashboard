@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space News Dashboard</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css style-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" width="100px" />
+      <h2 style="color: #000c22">Space News Dashboard</h2>
+
+      <div class="inputSearch desktop">
+        <form id="searchFormDesktop">
+          <input type="text" placeholder="Type to search..." />
+          <span><i class="fa-solid fa-search"></i></span>
+        </form>
+      </div>
+      <nav class="desktop">
+        <ul>
+          <li onclick="Search('new')">All Articles</li>
+          <li onclick="Search('spaceX')">SpaceX</li>
+          <li onclick="Search('mars')">Mars</li>
+          <li onclick="Search('nasa')">NASA</li>
+        </ul>
+      </nav>
+
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!--mobileVersion-->
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li onclick="Search('new')">All Articles</li>
+            <li onclick="Search('spaceX')">SpaceX</li>
+            <li onclick="Search('mars')">Mars</li>
+            <li onclick="Search('nasa')">NASA</li>
+          </ul>
+        </nav>
+        <div class="inputSearch">
+          <form id="searchFormMobile">
+            <input
+              id="searchInputMobile"
+              type="text"
+              placeholder="Type to search..."
+            />
+            <span><i class="fa-solid fa-search"></i></span>
+          </form>
+          <!-- <form id="searchFormMobile">
+            <input
+              id="searchInputMobile"
+              type="text"
+              placeholder="Type to search..."
+            />
+            <span><i class="fa-solid fa-search"></i></span>
+          </form> -->
+        </div>
+      </div>
+    </header>
+    <!--main-->
+    <main></main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
