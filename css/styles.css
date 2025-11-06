@@ -17,10 +17,7 @@ header {
   justify-content: space-between; /*evently*/
   box-shadow: 0px 3px 10px 0 rgba(80, 119, 242, 0.3);
 }
-/* nav,
-.inputSearch {
-  display: none;
-} */
+
 nav ul {
   display: flex;
   list-style: none;
